@@ -5,6 +5,6 @@ Feature: Add a product to cart
 
   Scenario:
     Given that I access the home page
-    And I go to the products 't-shirt' session
+    And I go to the products 'T-Shirts' session
     When I add a product to my cart
     Then I should see the product on my cart

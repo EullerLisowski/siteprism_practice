@@ -1,7 +1,8 @@
-Given("that I access the home page") do
+Given('that I access the home page') do
   @app.home.load
 end
 
-Given("I go to the products {string} session") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Given('I go to the products {string} session') do |session|
+  @app.home.header.find_in_list_category(session).click
+  expect(@app.home.title.downcase.include?(session.downcase)).to be_truthy
 end

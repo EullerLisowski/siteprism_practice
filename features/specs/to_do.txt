@@ -13,6 +13,6 @@ Feature: Add a product to cart
     
   Examples:
     |session|
-    |t-shirt|
-    |dresses|
-    |woman  |
+    |T-Shirt|
+    |Dresses|
+    |Woman  |

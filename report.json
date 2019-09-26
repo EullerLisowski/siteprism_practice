@@ -21,7 +21,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30200
+              "duration": 24600
             }
           },
           {
@@ -30,7 +30,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10900
+              "duration": 10400
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7800
+              "duration": 9800
             }
           }
         ],
@@ -53,20 +53,19 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39963489800
+              "duration": 26415524300
             }
           },
           {
             "keyword": "And ",
-            "name": "I go to the products 't-shirt' session",
+            "name": "I go to the products 'T-Shirts' session",
             "line": 8,
             "match": {
               "location": "features/step_definitions/home/home_steps.rb:5"
             },
             "result": {
-              "status": "pending",
-              "error_message": "TODO (Cucumber::Pending)\n./features/step_definitions/home/home_steps.rb:6:in `\"I go to the products {string} session\"'\nfeatures/specs/add_to_cart.feature:8:in `And I go to the products 't-shirt' session'",
-              "duration": 300300
+              "status": "passed",
+              "duration": 2362296600
             }
           },
           {
@@ -77,7 +76,9 @@
               "location": "features/step_definitions/category/category_steps.rb:1"
             },
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "undefined method `add_to_cart' for #<Capybara::Node::Element:0x0000000004498c58> (NoMethodError)\n./features/step_definitions/category/category_steps.rb:2:in `\"I add a product to my cart\"'\nfeatures/specs/add_to_cart.feature:9:in `When I add a product to my cart'",
+              "duration": 103753700
             }
           },
           {
@@ -99,7 +100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2589142500
+              "duration": 240707700
             }
           }
         ]
