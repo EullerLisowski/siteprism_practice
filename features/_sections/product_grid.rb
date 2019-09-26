@@ -12,7 +12,6 @@ class ProductGrid < SitePrism::Section
   def add_to_cart(product_name = nil)
     product = find_product(product_name)
     product.hover
-    product.find(".button-container > a[title='Add to cart']")
-
+    product.find(".button-container > a[title='Add to cart']").click
   end
 end
