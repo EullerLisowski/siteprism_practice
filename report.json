@@ -1,0 +1,109 @@
+[
+  {
+    "uri": "features/specs/add_to_cart.feature",
+    "id": "add-a-product-to-cart",
+    "keyword": "Feature",
+    "name": "Add a product to cart",
+    "description": "  As a customer of the website\n  I want to add products to my cart\n  To proceed to checkout and buy all of them at once",
+    "line": 1,
+    "elements": [
+      {
+        "id": "add-a-product-to-cart;",
+        "keyword": "Scenario",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7800
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I access the home page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/home/home_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39963489800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the products 't-shirt' session",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/home/home_steps.rb:5"
+            },
+            "result": {
+              "status": "pending",
+              "error_message": "TODO (Cucumber::Pending)\n./features/step_definitions/home/home_steps.rb:6:in `\"I go to the products {string} session\"'\nfeatures/specs/add_to_cart.feature:8:in `And I go to the products 't-shirt' session'",
+              "duration": 300300
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I add a product to my cart",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/category/category_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the product on my cart",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/cart/cart_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2589142500
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
