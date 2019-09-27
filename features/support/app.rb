@@ -6,4 +6,8 @@ class App
   def category
     Category.new
   end
+
+  def cart
+    Cart.new
+  end
 end

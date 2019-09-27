@@ -11,4 +11,5 @@ end
 
 Capybara.configure do |config|
   config.default_driver = :site_prism
+  config.app_host = 'http://automationpractice.com'
 end

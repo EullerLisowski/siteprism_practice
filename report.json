@@ -8,12 +8,11 @@
     "line": 1,
     "elements": [
       {
-        "id": "add-a-product-to-cart;",
-        "keyword": "Scenario",
+        "keyword": "Background",
         "name": "",
         "description": "",
         "line": 6,
-        "type": "scenario",
+        "type": "background",
         "before": [
           {
             "match": {
@@ -21,7 +20,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24600
+              "duration": 26800
             }
           },
           {
@@ -30,7 +29,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10400
+              "duration": 12400
             }
           },
           {
@@ -39,7 +38,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9800
+              "duration": 11900
             }
           }
         ],
@@ -53,43 +52,43 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26415524300
+              "duration": 13564030900
             }
           },
           {
             "keyword": "And ",
             "name": "I go to the products 'T-Shirts' session",
-            "line": 8,
+            "line": 10,
             "match": {
               "location": "features/step_definitions/home/home_steps.rb:5"
             },
             "result": {
               "status": "passed",
-              "duration": 2362296600
+              "duration": 892058000
             }
           },
           {
             "keyword": "When ",
             "name": "I add a product to my cart",
-            "line": 9,
+            "line": 11,
             "match": {
               "location": "features/step_definitions/category/category_steps.rb:1"
             },
             "result": {
-              "status": "failed",
-              "error_message": "undefined method `add_to_cart' for #<Capybara::Node::Element:0x0000000004498c58> (NoMethodError)\n./features/step_definitions/category/category_steps.rb:2:in `\"I add a product to my cart\"'\nfeatures/specs/add_to_cart.feature:9:in `When I add a product to my cart'",
-              "duration": 103753700
+              "status": "passed",
+              "duration": 2226524200
             }
           },
           {
             "keyword": "Then ",
             "name": "I should see the product on my cart",
-            "line": 10,
+            "line": 12,
             "match": {
               "location": "features/step_definitions/cart/cart_steps.rb:1"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1749007600
             }
           }
         ],
@@ -100,7 +99,201 @@
             },
             "result": {
               "status": "passed",
-              "duration": 240707700
+              "duration": 440566600
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17100
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I access the home page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/home/home_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2094629600
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the products 'Dresses' session",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/home/home_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2162639700
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I add a product to my cart",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/category/category_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1233857900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the product on my cart",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/cart/cart_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1117791500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 375441400
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14200
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I access the home page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/home/home_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1584580300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the products 'Women' session",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/home/home_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1985575100
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I add a product to my cart",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/category/category_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1239561000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the product on my cart",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/cart/cart_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1144371800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 376624700
             }
           }
         ]
